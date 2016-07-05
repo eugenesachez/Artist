@@ -1,0 +1,80 @@
+/* Empty. Add your own CSS if you like */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.star>.item-content{
+	background-color: #EEE8D6 !important;
+}
+.splash{
+	background: url(../img/home.jpg) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.branding{
+	width: 50%;
+	max-width: 300px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+
+}/* Empty. Add your own CSS if you like */
+.tagline{
+	font-size:1.4rem;
+}
+.branding p{
+	margin-top: 10px;
+	font-size: 1rem;
+}
+.item-divider{
+	background-color: #eee8d6;
+}
+.bar-positive, .tabs-positive>.tabs{
+	background-color: #0f77b4 !important;
+	border-color: #0f77b4;
+}
+.item-thumbnail-left img{
+	border-radius:10px;
+}
+.item h3 {
+	font-size:1.2rem;
+	font-weight:bold;
+	color:#0f77b4;
+}
+.dayhighlight{
+	background-color: #9ec6de;
+	border-toop:20px solid #417d9a;
+}
+.dayhighlight h2{
+	color:417d9a;
+	font-size:2rem;
+	font-weight:200;
+
+.ionic_ratings .read_only{
+	pointer-events: none !important;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
