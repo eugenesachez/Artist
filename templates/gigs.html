@@ -1,0 +1,47 @@
+<ion-view view-title="Gigs">
+  <div class="bar bar-subheader item-input-inset bar-light">
+  <label class="item-input-wrapper">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="search" ng-model="query" placeholder="search">
+  </label>
+</div>
+<ion-content class="has-subheader">
+<ion-refresher on-refresh="doRefresh()"></ion-refresher>
+<ion-list show-delete="data.showDelete"
+show-Reorder="data.showReorder">
+<ion-item ng-class="{'star': item.star}" 
+ng-repeat='item in gigs | filter:query' 
+class="item-thumbnail-left item-icon-right item-text-wrap" href="#/tab/gigs/{{item.name}}">
+<img ng-src="img/{{item.name}}.jpg" width="150px" height="100px" alt="{{item.name}} Photo">
+<h3>Name: {{item.name}}</h3>
+<h2>Date: {{item.date}}</h2>
+<h3>Venue: {{item.venue}}</h3>
+<h2>Fee: {{item.entry}}</h2>
+<p>{{item.Description | limitTo: 100}}
+{{item.Description.length>150 ? '...': ''}}
+</p>
+
+  <div class="item item-divider item-positive">
+  Gallery and More
+  <!-- <a href="#"><i class=" icon ion-social-facebook"></i></a>
+    </div>
+   -->
+  </div>
+
+<button class="button button-clear ion-star button-assertive" 
+ng-click="toggleStar(item)" ng-show="item.star"></button>
+<ion-option-button class="button-dark" ng-click="toggleStar(item)">
+<i class="icon ion-star"></i>
+
+<ion-delete-button  class="ion-minus-circled"
+ng-click="onItemDelete(item)"></ion-delete-button>
+
+<ion-reorder-button class="ion-navicon" 
+on-reorder="moveItem(item,  $fromIndex, $toIndex)"><ion-reorder-button>
+</ion-item>
+</ion-list>
+</ion-content>
+
+
+  
+</ion-view>

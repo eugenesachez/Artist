@@ -1,0 +1,91 @@
+
+
+<ion-view>
+  <ion-content>
+    <ion-list class="list-inset">
+      <ion-item class="item-text-wrap"
+      ng-repeat="item in artists | filter: {aka:whichartist}">
+        <img ng-src="img/{{item.aka}}.jpg" width="150px" height="100px "alt="{{item.name}} Photo">
+        <h3>{{ item.name }}</h3>
+        <!-- <h3>{{ item.aka }}</h3> -->
+        <p>{{ item.bio }}</p>
+        
+          <div ng-controller="social" class="button-bar">
+  <button ng-click="share('t', 'Check out what they've been upto:','', 'http://prytontechnologies.com')"
+  class="icon   ion-social-twitter button button-calm button-clear"></button>
+  <button ng-click="share('f', 'Check out what they've been upto:','', 'http://prytontechnologies.com')"
+  class="icon  ion-social-facebook button button-positive button-clear"></button>
+  <button ng-click="share('w', 'Check out what they've been upto:','', 'http://prytontechnologies.com')"
+  class="icon  ion-social-whatsapp button button-balanced button-clear"></button>
+  <button ng-click="share('w', 'Check out what they've been upto:','', 'http://prytontechnologies.com')"
+  class="icon  ion-ios-email button button-assertive button-clear"></button>
+  </div>
+
+      </ion-item>
+    </ion-list>
+    <h3 class="branding" >Music Videos</h3>
+
+<div class="list card">
+  <div class="item item-avatar">
+    <img src="img/sauti_sol.jpg">
+    <h2>Unconditional love</h2>
+    <p>By Sauti Sol</p>
+  </div>
+
+  <div class="item item-body">
+    <!-- <img class="full-image" src="img/hart_the_band.jpg"> -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/wyVM1evRxNw" frameborder="0" width="560" height="315"></iframe>
+   <!--  </div>
+    <p>
+       <a href="#" class="subdued"><i class=" icon ion-ios-heart positive"></i>Like</a>
+      <a href="#" class="subdued"><i class=" icon ion-chatbox royal"></i>Comment</a>
+      <a href="#" class="subdued"><i class=" icon ion-android-share calm"></i>Share</a>
+    </p>
+  </div> -->
+
+</div>
+
+<div class="list card">
+  <div class="item item-avatar">
+    <img src="img/octopizzo.jpg">
+    <h2>Bank Otuch</h2>
+    <p>By Octopizzo</p>
+  </div>
+
+  <div class="item item-body">
+    <!-- <img class="full-image" src="img/hart_the_band.jpg"> -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/gvI2ClWqHO0" frameborder="0" width="560" height="315"></iframe>
+   <!--  </div>
+    <p>
+       <a href="#" class="subdued"><i class=" icon ion-ios-heart positive"></i>Like</a>
+      <a href="#" class="subdued"><i class=" icon ion-chatbox royal"></i>Comment</a>
+      <a href="#" class="subdued"><i class=" icon ion-android-share calm"></i>Share</a>
+    </p>
+  </div> -->
+
+</div>
+<div class="list card">
+  <div class="item item-avatar">
+    <img src="img/elani.jpg">
+    <h2>My darling</h2>
+    <p>By Elani</p>
+  </div>
+
+  <div class="item item-body">
+    <!-- <img class="full-image" src="img/hart_the_band.jpg"> -->
+     <div class="video-container">
+          <iframe src="http://www.youtube.com/embed/uJAWaE11Jf4" frameborder="0" width="560" height="315"></iframe>
+<!--      </div>
+    <p>
+       <a href="#" class="subdued"><i class=" icon ion-ios-heart positive"></i>Like</a>
+      <a href="#" class="subdued"><i class=" icon ion-chatbox royal"></i>Comment</a>
+      <a href="#" class="subdued"><i class=" icon ion-android-share calm"></i>Share</a>
+    </p>
+  </div> -->
+
+</div>
+
+  </ion-content>
+</ion-view>
