@@ -32,6 +32,7 @@
   <feature name="InAppBrowser">
     <plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
 </feature>
+<preference name="phonegap-version" value="cli-6.1.0" />
 <plugin name="nl.x-services.plugins.socialsharing" spec="3.7.0" source="pgb" />
 <plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
   
