@@ -24,13 +24,15 @@
   <preference name="SplashScreen" value="screen"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
-  </feature>
+  </feature
+  <platform name="android">
+    <icon src="res/icon.png"/>
+    <splash src="res/splash.png"/>
+  </platform>
   <feature name="InAppBrowser">
     <plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
 </feature>
-<feature name="InAppBrowser">
-    <param name="ios-package" value="CDVInAppBrowser" />
-</feature>
-<feature name="InAppBrowser" />
+<plugin name="nl.x-services.plugins.socialsharing" spec="4.3.8" source="pgb" />
+<plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
   
 </widget>
