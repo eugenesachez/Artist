@@ -154,6 +154,29 @@ app.controller('ListController', ['$scope', '$http','$state', function($scope, $
     }
   });
 }]);
+//inappbrowser
+app.controller('BrowseCtrl', function($scope, $cordovaInAppBrowser) {
+
+   var options = {
+      location: 'yes',
+      clearcache: 'yes',
+      toolbar: 'no'
+   };
+
+   $scope.openBrowser = function() {
+      $cordovaInAppBrowser.open('http://prytontecnologies.com', '_blank', options)
+		
+      .then(function(event) {
+         // success
+      })
+		
+      .catch(function(event) {
+         // error
+      });
+   }
+
+}))
+
 
 // app.controller('RatingController', ['$scope', function($scope) {
 
