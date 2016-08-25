@@ -175,7 +175,7 @@ app.controller('BrowseCtrl', function($scope, $cordovaInAppBrowser) {
       });
    }
 
-}))
+})
 
 
 // app.controller('RatingController', ['$scope', function($scope) {
