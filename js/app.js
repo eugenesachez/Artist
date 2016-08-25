@@ -155,27 +155,27 @@ app.controller('ListController', ['$scope', '$http','$state', function($scope, $
   });
 }]);
 //inappbrowser
-app.controller('BrowseCtrl', function($scope, $cordovaInAppBrowser) {
-
-   var options = {
-      location: 'yes',
-      clearcache: 'yes',
-      toolbar: 'no'
-   };
-
-   $scope.openBrowser = function() {
-      $cordovaInAppBrowser.open('http://prytontecnologies.com', '_blank', options)
-		
-      .then(function(event) {
-         // success
-      })
-		
-      .catch(function(event) {
-         // error
-      });
-   }
-
-})
+app.controller("BrowseCtrl", function ($scope) {
+ 
+$scope.openInExternalBrowser = function()
+{
+ // Open in external browser
+ window.open('http://prytontechnologies.com','_system','location=yes'); 
+};
+ 
+$scope.openInAppBrowser = function()
+{
+ // Open in app browser
+ window.open('http://prytontechnologies.com','_blank'); 
+};
+ 
+$scope.openCordovaWebView = function()
+{
+ // Open cordova webview if the url is in the whitelist otherwise opens in app browser
+ window.open('http://prytontechnologies.com','_self'); 
+};
+ 
+});
 
 
 // app.controller('RatingController', ['$scope', function($scope) {
