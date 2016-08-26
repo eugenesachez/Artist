@@ -35,5 +35,6 @@
 <preference name="phonegap-version" value="cli-6.3.0" />
 
 <plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
+<plugin name="com.gestionaleauto.socialshare" spec="0.0.3" source="pgb" />
   
 </widget>
